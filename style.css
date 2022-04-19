@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;500;700&display=swap");
+
+html {
+  font-size: 10px;
+  font-weight: 300;
+  font-family: "Akshar", sans-serif;
+}
+
+body {
+  width: 90vw;
+  margin: 0 auto;
+  background: radial-gradient(#343e63, #2a3352);
+}
+
+main {
+  text-align: center;
+  background-color: #f8f1e9;
+  border: solid #ef7b54;
+  border-width: 8px 8px 8px 8px;
+  min-height: 50vh;
+  border-radius: 3rem 3rem 3rem 3rem;
+  padding: 1rem;
+  color: #1f2933;
+  margin-top: 200px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 8rem 0;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: #83d1d0;
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+  font-family: "Akshar", sans-serif;
+  font-size: 1.5rem;
+}
+
+button:last-child {
+  background: #ef7b54;
+  border-radius: 0 0 1rem 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+input {
+  border: 1px solid lightgrey;
+  background: transparent;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  width: 16rem;
+  text-align: center;
+}
+
+#range {
+  display: flex;
+  background: #83d1d0;
+  height: 50px;
+  padding: 0;
+  margin: 0 0 4rem 0;
+}
+
+#rangeOutput {
+  font-size: 1.6rem;
+}
+
+.stats {
+  text-align: left;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info span {
+  font-size: 1.6rem;
+}
+
+#newGameButton {
+  border-radius: 0;
+}
+
+.flash {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    width: 60vw;
+    margin-top: 10px !important ;
+  }
+}
